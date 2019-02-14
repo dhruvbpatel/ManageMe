@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
                 validate(name.getText().toString(),pass.getText().toString());
 
-//            public void openActivity3(){
+//          public void openActivity3(){
 
 //                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
 //                startActivity(intent);
