@@ -10,31 +10,16 @@ import android.widget.ImageButton;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    private Button button;
+
     private Button todo;
     private Button money;
-    private ImageButton homebutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        button =(Button)findViewById(R.id.back);
 
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v1) {
-                openActivity2();
-            }
-            public void openActivity2(){
-
-                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
-                startActivity(intent);
-
-
-            }
-
-        });
 
        todo=(Button)findViewById(R.id.todo);
 
@@ -67,19 +52,6 @@ public class MainActivity2 extends AppCompatActivity {
 
         });
 
-        homebutton=(ImageButton) findViewById(R.id.homebutton);
-
-        homebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity5();}
-                public void openActivity5(){
-
-                    Intent intent3=new Intent(MainActivity2.this, MainActivity.class);
-                    startActivity(intent3);
-                }
-            }
-            );
 
 
 
