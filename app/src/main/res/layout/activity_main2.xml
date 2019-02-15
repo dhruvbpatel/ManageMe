@@ -38,6 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/money" />
 
     <ImageView
+        android:contentDescription="home_image"
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/untitled" />
+        app:srcCompat="@drawable/home" />
 
     <!--<Button-->
         <!--android:id="@+id/back"-->
