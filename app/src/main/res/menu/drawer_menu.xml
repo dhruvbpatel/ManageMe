@@ -9,6 +9,11 @@
             android:title="Home">
 
         </item>
+        <item
+            android:id="@+id/nav_todo"
+            android:title="To-Do">
+
+        </item>
 
         <item
             android:id="@+id/nav_account"
@@ -16,11 +21,7 @@
 
         </item>
 
-        <item
-            android:id="@+id/nav_todo"
-            android:title="To-Do">
 
-        </item>
     </group>
 
     <group
@@ -33,6 +34,9 @@
         <item
             android:id="@+id/nav_about"
             android:title="About Us"></item>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out"></item>
 
     </group>
 

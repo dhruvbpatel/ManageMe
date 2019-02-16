@@ -23,14 +23,19 @@
             ></android.support.v7.widget.Toolbar>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Main Layout" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Money Management"
+            android:textAlignment="center"
+            android:padding="100dp"
+            android:textColor="#f5e51b"
+            android:background="@drawable/darkbg"/>
 
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
         android:layout_width="match_parent"
+        android:id="@+id/navigation_menu"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu"
