@@ -9,13 +9,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="72dp"
-        android:layout_height="29dp"
+        android:layout_width="117dp"
+        android:layout_height="71dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Money"
+        android:textAlignment="center"
+        android:textColor="#f5e51b"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
