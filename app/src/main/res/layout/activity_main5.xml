@@ -22,14 +22,18 @@
 
             ></android.support.v7.widget.Toolbar>
 
+
+
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Money Management"
-            android:textAlignment="center"
+            android:background="@drawable/darkbg"
             android:padding="100dp"
-            android:textColor="#f5e51b"
-            android:background="@drawable/darkbg"/>
+            android:text="Home Page"
+            android:textAlignment="center"
+            android:textColor="#f5e51b" />
+
+
 
     </LinearLayout>
 
