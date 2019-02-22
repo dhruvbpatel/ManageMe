@@ -126,6 +126,7 @@ public class MainActivity3 extends AppCompatActivity implements Tab1.OnFragmentI
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+
     }
 
     @Override
