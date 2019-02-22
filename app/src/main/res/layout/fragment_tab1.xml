@@ -3,17 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/darkbg"
+
     tools:context=".Tab1">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="To-Do"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textColor="#f5e51b"-->
+
+        <!--android:layout_centerInParent="true"/>-->
+
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:id="@+id/et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To-Do"
-        android:textSize="30dp"
-        android:textColor="#f5e51b"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
-        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et"
+        android:layout_marginBottom="-81dp"
+                android:text="ADD" />
 
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+
+        android:text="REMOVE" />
 </RelativeLayout>

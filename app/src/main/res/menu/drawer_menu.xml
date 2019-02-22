@@ -6,18 +6,21 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:title="Home">
+            android:title="Home"
+            android:icon="@drawable/home">
 
         </item>
         <item
             android:id="@+id/nav_todo"
-            android:title="To-Do">
+            android:title="To-Do"
+            android:icon="@drawable/ic_check_box_black_24dp">
 
         </item>
 
         <item
             android:id="@+id/nav_account"
-            android:title="Account">
+            android:title="Account"
+            android:icon="@drawable/ic_account_box_black_24dp">
 
         </item>
 
@@ -29,14 +32,17 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_settings"
-            android:title="Settings"></item>
+            android:title="Settings"
+            android:icon="@drawable/ic_settings_black_24dp"></item>
 
         <item
             android:id="@+id/nav_about"
-            android:title="About Us"></item>
+            android:title="About Us"
+            android:icon="@drawable/ic_info_black_24dp"></item>
         <item
             android:id="@+id/nav_logout"
-            android:title="Log Out"></item>
+            android:title="Log Out"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"></item>
 
     </group>
 

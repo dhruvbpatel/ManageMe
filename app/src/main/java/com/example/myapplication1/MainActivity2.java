@@ -20,29 +20,30 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
 
+        todo = (Button) findViewById(R.id.todo);
 
-       todo=(Button)findViewById(R.id.todo);
-
-        todo.setOnClickListener(new View.OnClickListener(){
+        todo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {
                 openActivity3();
             }
-            public void openActivity3(){
+
+            public void openActivity3() {
 
                 Intent intent1 = new Intent(MainActivity2.this, MainActivity3.class);
                 startActivity(intent1);
             }
         });
 
-        money=(Button)findViewById(R.id.money);
+        money = (Button) findViewById(R.id.money);
 
-        money.setOnClickListener(new View.OnClickListener(){
+        money.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v3) {
                 openActivity4();
             }
-            public void openActivity4(){
+
+            public void openActivity4() {
 
                 Intent intent2 = new Intent(MainActivity2.this, MainActivity5.class);
                 startActivity(intent2);
@@ -51,9 +52,6 @@ public class MainActivity2 extends AppCompatActivity {
             }
 
         });
-
-
-
 
 
     }
