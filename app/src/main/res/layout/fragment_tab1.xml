@@ -34,6 +34,7 @@
         android:layout_marginStart="135dp"
         android:layout_marginTop="56dp"
         android:ems="10"
+        android:textColor="#FFF"
         android:inputType="textPersonName" />
 
     <Button
