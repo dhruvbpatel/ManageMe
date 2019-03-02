@@ -8,14 +8,13 @@
             android:id="@+id/nav_home"
             android:title="Home"
             android:icon="@drawable/home">
-
         </item>
         <item
         android:id="@+id/nav_todo"
         android:title="To-Do"
         android:icon="@drawable/ic_check_box_black_24dp">
 
-    </item>
+        </item>
         <item
             android:id="@+id/nav_todo1"
             android:title="Test "
