@@ -160,18 +160,25 @@ public class MainToDo extends AppCompatActivity {
         //radnom id
         String id = UUID.randomUUID().toString();
         Map<String,Object> todo = new HashMap<>();
-        todo.put("id",id);
-        todo.put("title",title);
-        todo.put("description",description);
 
-        db.collection("ToDoList").document(id)
-                .set(todo).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                //refresh data
-                loadData();
-            }
-        });
+        if(title.equals("") || description.equals(""))    // if content is empty then it will not add
+        {
+            Toast.makeText(MainToDo.this,"Enter Title and Description",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            todo.put("id", id);
+            todo.put("title", title);
+            todo.put("description", description);
+
+            db.collection("ToDoList").document(id)
+                    .set(todo).addOnSuccessListener(new OnSuccessListener<Void>() {
+                @Override
+                public void onSuccess(Void aVoid) {
+                    //refresh data
+                    loadData();
+                }
+            });
+        }
 
 
 
