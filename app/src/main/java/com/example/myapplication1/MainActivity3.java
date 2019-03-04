@@ -58,7 +58,7 @@ public class MainActivity3 extends AppCompatActivity implements Tab1.OnFragmentI
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_about:
-                        Toast.makeText(MainActivity3.this, "Sab Gandu Log hai !!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity3.this, " We're a team of Some Techies who love building Apps. !!", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
 

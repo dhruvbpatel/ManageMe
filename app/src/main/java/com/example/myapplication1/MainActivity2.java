@@ -30,7 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             public void openActivity3() {
 
-                Intent intent1 = new Intent(MainActivity2.this, MainActivity3.class);
+                Intent intent1 = new Intent(MainActivity2.this, MainToDo.class);
                 startActivity(intent1);
             }
         });

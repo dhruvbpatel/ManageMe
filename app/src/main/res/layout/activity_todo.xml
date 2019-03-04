@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainToDo">
+
+<android.support.design.widget.AppBarLayout
+
+
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Title"
+            android:textColorHint="@android:color/white"
+            android:textSize="30dp"
+            app:met_baseColor="@android:color/white"
+
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text="Description"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true" />
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.AppBarLayout>
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/ic_add_black_24dp"
+    app:elevation="6dp"
+    app:fabSize="normal"
+    app:layout_anchor="@id/appbar"
+    app:layout_anchorGravity="bottom|right"
+    app:pressedTranslationZ="12dp"
+    />
+
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/listTodo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+</android.support.v7.widget.RecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>
