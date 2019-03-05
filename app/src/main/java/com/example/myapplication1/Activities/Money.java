@@ -47,7 +47,7 @@ public class Money extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_settings:
-                        Toast.makeText(Money.this, "Clicked Settings", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Clicked Setting", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_about:
