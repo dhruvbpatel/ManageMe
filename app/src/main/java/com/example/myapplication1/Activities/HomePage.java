@@ -1,14 +1,15 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+
+import com.example.myapplication1.R;
 
 
-public class MainActivity2 extends AppCompatActivity {
+public class HomePage extends AppCompatActivity {
 
 
     private Button todo;
@@ -30,7 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             public void openActivity3() {
 
-                Intent intent1 = new Intent(MainActivity2.this, MainToDo.class);
+                Intent intent1 = new Intent(HomePage.this, MainToDo.class);
                 startActivity(intent1);
             }
         });
@@ -45,7 +46,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             public void openActivity4() {
 
-                Intent intent2 = new Intent(MainActivity2.this, MainActivity5.class);
+                Intent intent2 = new Intent(HomePage.this, RegisterActivity.class);
                 startActivity(intent2);
 
 

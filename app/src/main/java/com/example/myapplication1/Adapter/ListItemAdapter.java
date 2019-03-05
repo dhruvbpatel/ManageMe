@@ -9,14 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.myapplication1.MainToDo;
-
-import org.w3c.dom.Text;
+import com.example.myapplication1.Activities.MainToDo;
 
 import java.util.List;
-import java.util.zip.Inflater;
 
-import  com.example.myapplication1.MainToDo;
 import com.example.myapplication1.Model.ToDo;
 import com.example.myapplication1.R;
 
