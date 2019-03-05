@@ -1,6 +1,5 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Activities;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -13,10 +12,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TableLayout;
 import android.widget.Toast;
+
+import com.example.myapplication1.Adapter.PagerAdapter;
+import com.example.myapplication1.R;
 
 public class MainActivity3 extends AppCompatActivity implements Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener {
                 //private Button back;
@@ -108,7 +107,7 @@ public class MainActivity3 extends AppCompatActivity implements Tab1.OnFragmentI
 //            }
 //            public void openActivity5(){
 //
-//                Intent intent2 = new Intent(MainActivity3.this, MainActivity2.class);
+//                Intent intent2 = new Intent(MainActivity3.this, HomePage.class);
 //                startActivity(intent2);
 ////            }
 //

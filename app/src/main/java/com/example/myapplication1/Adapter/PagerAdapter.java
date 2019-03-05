@@ -1,8 +1,11 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import com.example.myapplication1.Activities.Tab1;
+import com.example.myapplication1.Activities.Tab2;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
 
@@ -15,6 +18,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
 
     }
+
+
 
     @Override
     public Fragment getItem(int position) {

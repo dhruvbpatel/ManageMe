@@ -1,6 +1,5 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Activities;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -12,7 +11,9 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity5 extends AppCompatActivity {
+import com.example.myapplication1.R;
+
+public class Money extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     Toolbar toolbar;
@@ -34,23 +35,23 @@ public class MainActivity5 extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.nav_home:
-                        Toast.makeText(MainActivity5.this, "Clicked Home ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Clicked Home ", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_account:
-                        Toast.makeText(MainActivity5.this, "Clicked Account", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Clicked Account", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_todo:
-                        Toast.makeText(MainActivity5.this, "Clicked Todo", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Clicked Todo", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_settings:
-                        Toast.makeText(MainActivity5.this, "Clicked Settings", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Clicked Settings", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_about:
-                        Toast.makeText(MainActivity5.this, "Sab Gandu Log hai !!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Sab Gandu Log hai !!", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
 

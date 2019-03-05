@@ -1,4 +1,4 @@
-package com.example.myapplication1;
+package com.example.myapplication1.Activities;
 
 /*
 import android.support.v7.app.AppCompatActivity;
@@ -186,6 +186,7 @@ public class MainToDo extends AppCompatActivity {
 
     private void loadData() {
         //dialog.show();
+
         if(toDoList.size()>0)
             toDoList.clear();    // removing values
 
