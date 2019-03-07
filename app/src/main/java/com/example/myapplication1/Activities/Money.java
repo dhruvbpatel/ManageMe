@@ -1,5 +1,6 @@
 package com.example.myapplication1.Activities;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +12,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.myapplication1.Model.ToDo;
 import com.example.myapplication1.R;
 
 public class Money extends AppCompatActivity {
@@ -43,6 +45,11 @@ public class Money extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_todo:
+                        // to open To-Do
+
+                        Intent intent2 = new Intent(getApplicationContext(), MainToDo.class);
+                        startActivity(intent2);
+
                         Toast.makeText(Money.this, "Clicked Todo", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
