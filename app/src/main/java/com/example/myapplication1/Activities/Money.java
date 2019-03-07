@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import com.example.myapplication1.Model.ToDo;
 import com.example.myapplication1.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Money extends AppCompatActivity {
 
@@ -21,6 +23,8 @@ public class Money extends AppCompatActivity {
     Toolbar toolbar;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
+    FirebaseAuth    mAuth;
+    FirebaseUser currentUser;
 
 
 
@@ -58,9 +62,15 @@ public class Money extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_about:
-                        Toast.makeText(Money.this, "Sab Gandu Log hai !!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Money.this, "Just a Bunch of Tech Geeks", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
+                    case R.id.nav_logout:
+                        FirebaseAuth.getInstance().signOut();
+                        Intent intent3 = new Intent(getApplicationContext(),LoginActivity.class);
+                        startActivity(intent3);
+                        finish();
+                        Toast.makeText(getApplicationContext(), "Logged Out", Toast.LENGTH_SHORT).show();
 
 
                 }
