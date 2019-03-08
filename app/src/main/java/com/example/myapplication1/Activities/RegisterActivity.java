@@ -116,6 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
         finish();
     }
 
+
     // update user info
     private  void  updateUserInfo(String name, FirebaseUser currentUser){
 

@@ -27,11 +27,25 @@ public class Money extends AppCompatActivity {
     FirebaseUser currentUser;
 
 
+    @Override
+    public void onBackPressed() {
 
+    }
+
+    /*@Override
+    public boolean onKeyDown(int keyCode, Ke    yEvent event) {
+        if(keyCode==KeyEvent.KEYCODE_BACK) {
+            return false;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
+
+
 
 
         setUpToolbar();
@@ -47,6 +61,9 @@ public class Money extends AppCompatActivity {
                     case R.id.nav_account:
                         Toast.makeText(Money.this, "Clicked Account", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
+                        Intent intent = new Intent(getApplicationContext(),AboutUs.class);
+                        startActivity(intent);
+                        finish();
                         break;
                     case R.id.nav_todo:
                         // to open To-Do
@@ -62,6 +79,11 @@ public class Money extends AppCompatActivity {
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
                     case R.id.nav_about:
+
+                        Intent intent5 = new Intent(getApplicationContext(),AboutUs.class);
+                        startActivity(intent5);
+                        finish();
+
                         Toast.makeText(Money.this, "Just a Bunch of Tech Geeks", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
                         break;
@@ -72,6 +94,7 @@ public class Money extends AppCompatActivity {
                         finish();
                         Toast.makeText(getApplicationContext(), "Logged Out", Toast.LENGTH_SHORT).show();
 
+                        break;
 
                 }
                 return false;
