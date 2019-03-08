@@ -27,19 +27,11 @@ public class Money extends AppCompatActivity {
     FirebaseUser currentUser;
 
 
-    @Override
-    public void onBackPressed() {
 
-    }
 
-    /*@Override
-    public boolean onKeyDown(int keyCode, Ke    yEvent event) {
-        if(keyCode==KeyEvent.KEYCODE_BACK) {
-            return false;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-*/
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +62,7 @@ public class Money extends AppCompatActivity {
 
                         Intent intent2 = new Intent(getApplicationContext(), MainToDo.class);
                         startActivity(intent2);
+                        finish();
 
                         Toast.makeText(Money.this, "Clicked Todo", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
