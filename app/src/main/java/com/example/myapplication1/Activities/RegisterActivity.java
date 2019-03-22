@@ -60,15 +60,26 @@ public class RegisterActivity extends AppCompatActivity {
                 final String confPassword=userConfPassword.getText().toString();
                 final String name=userName.getText().toString();
 
-                if(email.isEmpty() || password.isEmpty()||confPassword.isEmpty()||name.isEmpty() || !password.equals(confPassword) ){
+                if(email.isEmpty() ){
 
                     // checking if input is proper
-                    showMessage("Please verify all Input");
+                    showMessage("Please enter email ");
                     regBtn.setVisibility(View.VISIBLE);
                     loadingProgress.setVisibility(View.INVISIBLE);
 
-
                 }
+                //|| password.isEmpty()||confPassword.isEmpty()||name.isEmpty() || !password.equals(confPassword
+                else if(password.isEmpty()){
+                    showMessage("Please enter a password");
+                    regBtn.setVisibility(View.VISIBLE);
+                    loadingProgress.setVisibility(View.INVISIBLE);
+                }
+                else if(!password.equals(confPassword)){
+                    showMessage("Confirm password do not match ");
+                    regBtn.setVisibility(View.VISIBLE);
+                    loadingProgress.setVisibility(View.INVISIBLE);
+                }
+
                 else{
                     // creating account if everything goes well
                     createAccount(email,name,password);

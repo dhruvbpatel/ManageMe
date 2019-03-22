@@ -49,50 +49,6 @@
           "status": 2
         }
       }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:371834245240:android:8878dc3de8ef7d47",
-        "android_client_info": {
-          "package_name": "in.pateldhruv.todo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "371834245240-kg7ddk8330sadft9f8qc78g8m7pepakn.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "in.pateldhruv.todo",
-            "certificate_hash": "461db19119cf208877e86ed12263a4982f8018ee"
-          }
-        },
-        {
-          "client_id": "371834245240-ii44un37s82bh5027mvjlropt6fu0p0q.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDTpD39tO2pchiBt14KC0FbuJqWKfnJKDc"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "371834245240-ii44un37s82bh5027mvjlropt6fu0p0q.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
     }
   ],
   "configuration_version": "1"

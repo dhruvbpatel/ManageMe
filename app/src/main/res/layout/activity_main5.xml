@@ -24,13 +24,12 @@
             ></android.support.v7.widget.Toolbar>
 
 
-
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/darkbg"
             android:padding="100dp"
-            android:text="Home Page"
+            android:text="Home "
             android:textAlignment="center"
             android:textColor="#f5e51b" />
 
