@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/darkbg"
             android:padding="100dp"
-            android:text="Home "
+            android:text="Money"
             android:textAlignment="center"
             android:textColor="#f5e51b" />
 

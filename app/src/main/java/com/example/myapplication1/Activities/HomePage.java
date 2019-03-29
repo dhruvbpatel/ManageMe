@@ -46,7 +46,7 @@ public class HomePage extends AppCompatActivity {
 
             public void openActivity4() {
 
-                Intent intent2 = new Intent(HomePage.this, Money.class);
+                Intent intent2 = new Intent(HomePage.this, MainMoney.class);
                 startActivity(intent2);
 
 
