@@ -378,9 +378,9 @@ public class MainMoney extends AppCompatActivity {
 
 
     }
-
+ // for storing the database into  firebase firestore
     private void setData(String category, String money) {
-        //radnom id
+        //random id
         String id = UUID.randomUUID().toString();
         Map<String,Object> todo = new HashMap<>();
 
