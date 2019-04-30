@@ -13,7 +13,7 @@ A simple Android Application that helps managing Personal tasks and track your E
 * Material UI
 
 ***
-
+## **Preview of Application**
 <p align="center">
  
   
