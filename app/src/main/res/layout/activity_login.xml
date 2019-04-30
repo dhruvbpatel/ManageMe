@@ -36,7 +36,7 @@
         android:layout_marginBottom="4dp"
         android:background="@drawable/reg_edittext_style"
         android:ems="10"
-        android:hint="Mail Adress"
+        android:hint="Mail Address"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"

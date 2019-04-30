@@ -16,8 +16,8 @@
 
         </item>
         <item
-            android:id="@+id/nav_todo1"
-            android:title="Test "
+            android:id="@+id/nav_money"
+            android:title="Money"
             android:icon="@drawable/ic_check_box_black_24dp">
 
         </item>

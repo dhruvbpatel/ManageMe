@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/darkbg"
 
         android:orientation="vertical">
 
@@ -23,17 +24,56 @@
 
             ></android.support.v7.widget.Toolbar>
 
+        <ImageView
+            android:contentDescription="home_image"
+            android:id="@+id/regLogo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="146dp"
 
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/darkbg"
-            android:padding="100dp"
-            android:text="Money"
+            android:layout_marginTop="200dp"
             android:textAlignment="center"
-            android:textColor="#f5e51b" />
+            app:layout_constraintBottom_toTopOf="@+id/money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
 
+<Button
 
+    android:layout_height="50dp"
+    android:id="@+id/todo"
+    android:layout_width="287dp"
+
+    android:layout_marginStart="69dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginEnd="48dp"
+    android:layout_marginBottom="115dp"
+    android:text="To Do"
+    android:background="@drawable/home_btn"
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/todo"
+    />
+
+        <Button
+            android:id="@+id/money"
+            android:layout_width="287dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="69dp"
+
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/home_btn"
+
+            android:text="Money Management"
+
+            app:layout_constraintBottom_toTopOf="@+id/money"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regLogo"
+             />
     </LinearLayout>
 
     <android.support.design.widget.NavigationView

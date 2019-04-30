@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.myapplication1.Model.ToDo;
@@ -25,7 +27,8 @@ public class Money extends AppCompatActivity {
     NavigationView navigationView;
     FirebaseAuth    mAuth;
     FirebaseUser currentUser;
-
+    private Button todo;
+    private Button money;
 
 
 
@@ -51,9 +54,9 @@ public class Money extends AppCompatActivity {
                     case R.id.nav_account:
                         Toast.makeText(Money.this, "Clicked Account", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
-                        Intent intent = new Intent(getApplicationContext(),AboutUs.class);
-                        startActivity(intent);
-                        finish();
+                       // Intent intent = new Intent(getApplicationContext(),AboutUs.class);
+                        //startActivity(intent);
+                        //finish();
                         break;
                     case R.id.nav_todo:
                         // to open To-Do
@@ -64,6 +67,17 @@ public class Money extends AppCompatActivity {
 
                         Toast.makeText(Money.this, "Clicked Todo", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
+                        break;
+                    case R.id.nav_money:
+                        // to open To-Do
+
+                        Intent intent1 = new Intent(getApplicationContext(), MainMoney.class);
+                        startActivity(intent1);
+                        finish();
+
+                        Toast.makeText(Money.this, "Clicked Money", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawer(Gravity.START);   // for closing drawer as soon as we click ot
+
                         break;
                     case R.id.nav_settings:
                         Toast.makeText(Money.this, "Clicked Settings", Toast.LENGTH_SHORT).show();
@@ -91,6 +105,73 @@ public class Money extends AppCompatActivity {
                 return false;
             }
         });
+
+//        todo = (Button) findViewById(R.id.todo);
+//
+//        todo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v2) {
+//                openActivity3();
+//            }
+//
+//            public void openActivity3() {
+//
+//                Intent intent1 = new Intent(Money.this, MainToDo.class);
+//                startActivity(intent1);
+//            }
+//        });
+//
+//        money = (Button)findViewById(R.id.money);
+//
+//        money.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v3) {
+//                openActivity4();
+//            }
+//
+//            public void openActivity4() {
+//
+//                Intent intent2 = new Intent(Money.this, MainMoney.class);
+//                startActivity(intent2);
+//
+//
+//            }
+//
+//        });
+        todo = (Button) findViewById(R.id.todo);
+
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v2) {
+                openActivity3();
+            }
+
+            public void openActivity3() {
+
+                Intent intent1 = new Intent(Money.this, MainToDo.class);
+                startActivity(intent1);
+            }
+        });
+
+        money = (Button) findViewById(R.id.money);
+
+        money.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v3) {
+                openActivity4();
+            }
+
+            public void openActivity4() {
+
+                Intent intent2 = new Intent(Money.this, MainMoney.class);
+                startActivity(intent2);
+
+
+            }
+
+        });
+
+
     }
 
 
@@ -108,4 +189,9 @@ public class Money extends AppCompatActivity {
 
 
     }
+
+
+
 }
+
+

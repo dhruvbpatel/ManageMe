@@ -69,6 +69,7 @@ public class MainToDo extends AppCompatActivity {
     public String idUpdate="";
     ListItemAdapter adapter;
 
+    int backpress;
 
 
 
@@ -111,6 +112,15 @@ public class MainToDo extends AppCompatActivity {
         loadData();
 
 
+    }
+
+    public void onBackPressed(){
+        backpress = (backpress + 1);
+        Toast.makeText(getApplicationContext(), " Press Back again to Exit ", Toast.LENGTH_SHORT).show();
+
+        if (backpress>1) {
+            this.finish();
+        }
     }
 
     @Override
