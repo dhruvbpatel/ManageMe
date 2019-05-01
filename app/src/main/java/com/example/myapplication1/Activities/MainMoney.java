@@ -347,6 +347,8 @@ public class MainMoney extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         if(item.getTitle().equals("DELETE") )
