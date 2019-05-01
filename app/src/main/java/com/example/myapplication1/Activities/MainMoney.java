@@ -354,6 +354,8 @@ public class MainMoney extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
+
+
     private void deleteItem(int index) {
         db.collection("MoneyList")
                 .document(toDoList.get(index).getId())
