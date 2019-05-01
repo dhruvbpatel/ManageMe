@@ -238,6 +238,7 @@ public class MainToDo extends AppCompatActivity {
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -338,13 +339,12 @@ public class MainMoney extends AppCompatActivity {
 
 
     }
-    public void onBackPressed(){
-        backpress = (backpress + 1);
-        Toast.makeText(getApplicationContext(), " Press Back again to Exit ", Toast.LENGTH_SHORT).show();
+    @Override
+    public void onBackPressed() {
 
-        if (backpress>1) {
-            this.finish();
-        }
+        finish();
+        Intent intent = new Intent(MainMoney.this, Money.class);
+        startActivity(intent);
     }
 
     @Override

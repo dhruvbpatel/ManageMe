@@ -10,4 +10,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="txtCredits"><a href="https://www.linkedin.com/in/dhruv-patel-1057/">DHRUV</a></string>
+<string name="copy_right">Copyright by Dhruv Patek</string>
 </resources>
